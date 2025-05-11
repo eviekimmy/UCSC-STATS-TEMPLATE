@@ -19,20 +19,11 @@
 % Attempt to make hyperref and algorithmic work together better:
 \newcommand{\theHalgorithm}{\arabic{algorithm}}
 
-\usepackage{iftex}
+% Use the following line for the initial blind version submitted for review:
+\usepackage[accepted]{icml2023}
 
-\ifLuaTeX
-  \makeatletter
-  \let\pdfpagewidth\@undefined
-  \let\pdfpageheight\@undefined
-  \makeatother
-
-  % Quietly pass geometry options without triggering layout error
-  \PassOptionsToPackage{paperwidth=8.5in, paperheight=11in, margin=1in}{geometry}
-  %\usepackage[accepted]{TakeHomeTemplate/icml2023-lua}
-\else
-  \usepackage[accepted]{TakeHomeTemplate/icml2023}
-\fi
+% If accepted, instead use the following line for the camera-ready submission:
+% \usepackage[accepted]{icml2023}
 
 % For theorems and such
 \usepackage{amsmath}
@@ -69,8 +60,6 @@ $graphics.tex()$ % keep default partial that quarto uses
 \usepackage{fancyhdr} % for putting title in header
 \usepackage{natbib} % for citations
 
-\providecommand{\tightlist}{                          % for getting
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}} % lists to work
 
 \begin{document}
 
@@ -93,10 +82,8 @@ $abstract$
 $body$
 
 
-$if(bibliography)$
 \bibliography{$bibliography$} % make sure cite method is natbib in YAML
-\bibliographystyle{TakeHomeTemplate/icml2023}
-$endif$
+\bibliographystyle{icml2023}
 
 \end{document}
 
