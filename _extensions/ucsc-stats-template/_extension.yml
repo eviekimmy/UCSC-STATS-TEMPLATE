@@ -4,3 +4,4 @@ contributes:
   format:
     pdf:
       template: template.tex
+      cite-method: natbib
