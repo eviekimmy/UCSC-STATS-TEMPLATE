@@ -5,7 +5,8 @@ format for the FYE, which currently uses `icml2023`. This guide will give you so
 example code for installing and using the template. 
 
 # Setup
-First, to download the template, type the following into your terminal:
+First, to download the template, make sure in your terminal you direct to the 
+project folder you are working on. Type the following into your terminal:
 
 >quarto use template eviekimmy/UCSC-STATS-TEMPLATE
 
@@ -28,12 +29,7 @@ Once this is done, add the following to the YAML of your .qmd document:
 ---
 title: 'YOUR TITLE'
 author: 'YOUR NAME'
-documentclass: article
-classoption: twocolumn
-format: 
-  pdf: 
-    theme: ucsc-stats-template
-    keep-tex: true
+format: ucsc_stats_template-pdf
 ---
 ```
 The `keep-tex` command is optional. This allows you the original `.tex` file 
