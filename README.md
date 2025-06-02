@@ -28,6 +28,7 @@ Once this is done, add the following to the YAML of your .qmd document:
 ```
 ---
 title: 'YOUR TITLE'
+pdf-engine: pdflatex
 author: 'YOUR NAME'
 format: ucsc_stats_template-pdf
 ---

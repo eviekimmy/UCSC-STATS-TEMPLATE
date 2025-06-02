@@ -5,3 +5,4 @@ contributes:
     pdf:
       template: template.tex
       cite-method: natbib
+      keep-tex: true
