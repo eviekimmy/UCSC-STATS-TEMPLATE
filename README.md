@@ -8,19 +8,19 @@ example code for installing and using the template.
 First, to download the template, make sure in your terminal you direct to the 
 project folder you are working on. Type the following into your terminal:
 
->quarto use template eviekimmy/UCSC-STATS-TEMPLATE
+>_quarto use template eviekimmy/UCSC-STATS-TEMPLATE_
 
 This will give you some prompts for installing:
 
 
->? Do you trust the authors of this template (Y/n) › Yes <br>
->? Create a subdirectory for template? (Y/n) › No <br>
->[✓] Downloading <br>
->[✓] Unzipping <br>
+>_? Do you trust the authors of this template (Y/n) › **Yes** <br>_
+>_? Create a subdirectory for template? (Y/n) › **No** <br>_
+>_[✓] Downloading <br>_
+>_[✓] Unzipping <br>_
 >
->The template requires the following changes to extensions: <br>
->UCSC Statistics Template   [Install]    (format) <br>
->? Would you like to continue (Y/n) › Yes <br>
+>_The template requires the following changes to extensions: <br>_
+>_UCSC Statistics Template   [Install]    (format) <br>_
+>_? Would you like to continue (Y/n) › **Yes** <br>_
 
 
 Once this is done, add the following to the YAML of your .qmd document:
